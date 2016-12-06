@@ -240,9 +240,11 @@ public class Archivo {
         try{
             if(codigo<=0)mensaje("Ingresar codigo");
             else{
-                int codigo1 = empresa.buscaCodigoFuncionario(codigo);
-                empresa.modificarRegistroFuncionario(codigo1, funcionario);
-                grabar_Funcionario_txt(funcionario,empresa);
+                if (funcionario.getNombre() != null && funcionario.getContrasena() != null) {
+                    int codigo1 = empresa.buscaCodigoFuncionario(codigo);
+                    empresa.modificarRegistroFuncionario(codigo1, funcionario);
+                    grabar_Funcionario_txt(funcionario,empresa); 
+                }
 
             }
         }catch(Exception ex){
