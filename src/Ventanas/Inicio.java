@@ -137,7 +137,6 @@ public class Inicio extends javax.swing.JFrame {
 
     private void jBIrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBIrActionPerformed
         MostrarItinerarioUsuario mostrar = new MostrarItinerarioUsuario();
-        mensaje("hola");
         mostrar.setVisible(true);
         dispose();
     }//GEN-LAST:event_jBIrActionPerformed
